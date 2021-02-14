@@ -25,11 +25,11 @@ namespace Utilities
         // override for strings
         public static int AddTwoNumbers(string var1, string var2)
         {
-            if (var1 == null)
+            if (string.IsNullOrEmpty(var1))
             {
                 throw new ArgumentNullException("var1");
             }
-            if (var2 == null)
+            if (string.IsNullOrEmpty(var2))
             {
                 throw new ArgumentNullException("var2");
             }
